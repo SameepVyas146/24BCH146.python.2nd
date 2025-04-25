@@ -1,0 +1,17 @@
+def remove_substring(main_str, sub_str):
+    result = ''
+    i = 0
+    n = len(main_str)
+    m = len(sub_str)
+    
+    while i < n:
+        if i + m <= n and main_str[i:i+m] == sub_str:
+            i += m
+        else:
+            result += main_str[i]
+            i += 1
+    return result
+
+main_string = input("Enter main string: ")
+sub_string = input("Enter substring to remove: ")
+print("Result:", remove_substring(main_string, sub_string))
