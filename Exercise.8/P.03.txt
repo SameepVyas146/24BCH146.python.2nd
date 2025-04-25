@@ -1,0 +1,8 @@
+names = set()
+names.update({'Alice', 'Bob', 'Charlie', 'David', 'Eve'})
+print("Initial set:", names)
+
+names.discard('Bob')
+names.discard('David')
+names.add('Frank')
+print("After modifications:", names)

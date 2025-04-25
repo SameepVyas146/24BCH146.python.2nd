@@ -1,0 +1,4 @@
+words = ['apple', 'banana', 'cherry', 'date', 'fig']
+upper_words = {word.upper() for word in words}
+print("Original list:", words)
+print("Uppercase set:", upper_words)
