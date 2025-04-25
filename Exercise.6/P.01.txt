@@ -1,0 +1,5 @@
+students = [('anurag', 'Mitesh'), 'Emma', ('Davinder', 'Arjun'), 'Shristhi', 'Olivia']
+boys = sum(1 for student in students if isinstance(student, tuple))
+girls = len(students) - boys
+print("Number of boys:", boys)
+print("Number of girls:", girls)

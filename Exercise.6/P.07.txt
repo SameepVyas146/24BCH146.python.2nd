@@ -1,0 +1,5 @@
+original_tuple = (10, 20, 30, 40, 50)
+index_to_remove = 2
+new_tuple = original_tuple[:index_to_remove] + original_tuple[index_to_remove+1:]
+print("Original:", original_tuple)
+print("After deletion:", new_tuple)

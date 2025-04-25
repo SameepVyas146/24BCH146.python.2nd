@@ -1,0 +1,7 @@
+students = [(1, 'Rahul', 18), (2, 'Priya', 17), (3, 'Amit', 19)]
+roll_nos = [student[0] for student in students]
+names = [student[1] for student in students]
+ages = [student[2] for student in students]
+print("Roll Nos:", roll_nos)
+print("Names:", names)
+print("Ages:", ages)
