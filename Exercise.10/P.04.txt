@@ -1,0 +1,5 @@
+import os
+import shutil
+
+os.makedirs("new_directory", exist_ok=True)
+shutil.copy("source/file.txt", "new_directory/file.txt")

@@ -1,0 +1,7 @@
+articles = {'a', 'the', 'an'}
+
+with open("input.txt") as infile, open("output.txt", "w") as outfile:
+    for line in infile:
+        words = line.split()
+        filtered = [word if word.lower() not in articles else ' ' for word in words]
+        outfile.write(' '.join(filtered) + '\n')

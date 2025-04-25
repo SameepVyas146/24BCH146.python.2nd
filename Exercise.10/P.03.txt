@@ -1,0 +1,13 @@
+name = input("Enter name: ")
+phone = input("Enter phone: ")
+email = input("Enter email: ")
+
+vcard = f"""BEGIN:VCARD
+VERSION:3.0
+FN:{name}
+TEL:{phone}
+EMAIL:{email}
+END:VCARD"""
+
+with open(f"{name}.vcf", "w") as file:
+    file.write(vcard)

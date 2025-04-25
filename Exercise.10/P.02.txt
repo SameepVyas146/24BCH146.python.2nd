@@ -1,0 +1,18 @@
+import csv
+
+student_data = {}
+with open('students.csv', 'r') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        rollno = row['RollNo']
+        total = sum(int(row[subj]) for subj in ['Math', 'Science', 'English'])
+        student_data[rollno] = {
+            'Name': row['Name'],
+            'Math': row['Math'],
+            'Science': row['Science'],
+            'English': row['English'],
+            'Total': total
+        }
+
+for rollno, details in student_data.items():
+    print(f"{rollno}: {details}")
