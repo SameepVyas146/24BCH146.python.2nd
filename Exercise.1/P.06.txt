@@ -1,0 +1,3 @@
+a = float(input("Enter random Hours: "))
+final = a * 60
+print(f"{a} hour/s is equal to {final} minutes.")
