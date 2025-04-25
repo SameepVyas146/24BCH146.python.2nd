@@ -1,0 +1,12 @@
+def fun():
+    print("Inside fun()")
+
+def disp():
+    print("Inside disp()")
+
+def msg():
+    print("Inside msg()")
+
+functions = [fun, disp, msg]
+for func in functions:
+    func()

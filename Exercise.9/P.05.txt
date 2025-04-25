@@ -1,0 +1,3 @@
+faculty = ["Dr. Smith", "Prof. Johnson", "Dr. Brown", "Prof. Williams", "Dr. Lee"]
+long_names = list(filter(lambda name: len(name) > 8, faculty))
+print("Names with length > 8:", long_names)
