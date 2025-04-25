@@ -1,0 +1,9 @@
+import math
+def point_in_circle(xc, yc, r, xp, yp):
+    distance = math.sqrt((xp-xc)**2 + (yp-yc)**2)
+    if distance < r:
+        return "Inside"
+    elif distance == r:
+        return "On circle"
+    else:
+        return "Outside"

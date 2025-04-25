@@ -1,0 +1,7 @@
+def rectangle_comparison(l, b):
+    area = l * b
+    perimeter = 2 * (l + b)
+    if area > perimeter:
+        print("Area is greater than perimeter")
+    else:
+        print("Perimeter is greater than or equal to area")

@@ -1,0 +1,2 @@
+def absolute_value(num):
+    print("Absolute value:", abs(num))

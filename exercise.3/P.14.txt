@@ -1,0 +1,24 @@
+def evaluate_student(m1, m2, m3):
+    if m1 <= 39 or m2 <= 39 or m3 <= 39:
+        status = "Fail"
+    else:
+        status = "Pass"
+    
+    total = m1 + m2 + m3
+    average = total / 3
+    
+    def get_grade(mark):
+        if mark == 0: return "NA"
+        elif 0 < mark <= 39: return "F"
+        elif 40 <= mark <= 44: return "P"
+        elif 45 <= mark <= 49: return "C"
+        elif 50 <= mark <= 54: return "B"
+        elif 55 <= mark <= 59: return "B+"
+        elif 60 <= mark <= 69: return "A"
+        elif 70 <= mark <= 79: return "A+"
+        else: return "O"
+    
+    print("Total:", total)
+    print("Average:", average)
+    print("Status:", status)
+    print("Grades:", get_grade(m1), get_grade(m2), get_grade(m3))
