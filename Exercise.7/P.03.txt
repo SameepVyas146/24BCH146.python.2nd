@@ -1,0 +1,9 @@
+employees = {
+    'IT': {101: 45000, 102: 52000, 103: 38000},
+    'HR': {201: 42000, 202: 48000},
+    'Finance': {301: 55000, 302: 51000, 303: 60000}
+}
+
+for dept, dept_data in employees.items():
+    salaries = dept_data.values()
+    print(f"{dept} Department - Min: {min(salaries)}, Max: {max(salaries)}")

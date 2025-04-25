@@ -1,0 +1,5 @@
+prices = {'apple': 50, 'banana': 30, 'bread': 40, 'milk': 60}
+quantities = {'apple': 3, 'banana': 6, 'bread': 2, 'milk': 1}
+
+total_bill = sum(prices[item] * quantities.get(item, 0) for item in prices)
+print("Total grocery bill:", total_bill)
